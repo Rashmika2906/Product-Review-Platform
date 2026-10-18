@@ -12,7 +12,7 @@ reviews_bp = Blueprint("reviews", __name__)
 MAX_REVIEW_LENGTH = 2000
 SENTIMENTS = {"positive", "negative", "neutral"}
 
-# ?sort=... choices and the ORDER BY each one means
+
 SORT_OPTIONS = {
     "newest": (Review.created_at.desc(),),
     "oldest": (Review.created_at.asc(),),

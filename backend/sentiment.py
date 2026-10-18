@@ -1,10 +1,9 @@
-"""Sentiment analysis with VADER: a rule-based word-list scorer, no training needed."""
+"""Sentiment analysis with VADER."""
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 
 def _load_analyzer():
-    """Create the analyzer, downloading VADER's word list the first time."""
     try:
         return SentimentIntensityAnalyzer()
     except LookupError:
