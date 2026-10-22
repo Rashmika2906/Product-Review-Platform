@@ -1,5 +1,5 @@
 import { Link, Navigate, useLocation } from "react-router-dom";
-import { useAuth } from "../auth-context";
+import { useAuth } from "../authcontext";
 
 /**
  * Wrap a page in <RequireAuth> to keep out anonymous visitors,

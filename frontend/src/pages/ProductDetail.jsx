@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
-import { useAuth } from "../auth-context";
+import { useAuth } from "../authcontext";
 import ProductImage from "../components/productImage";
 import SentimentBadge from "../components/SentimentBadge";
 import { StarInput, Stars } from "../components/Stars";
