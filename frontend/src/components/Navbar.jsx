@@ -7,7 +7,7 @@ export default function Navbar() {
 
   function handleLogout() {
     logout();
-    navigate("/");
+    navigate("/"); // back to the landing page
   }
 
   return (
@@ -18,7 +18,8 @@ export default function Navbar() {
         </Link>
 
         <nav className="nav-links" aria-label="Main">
-          <NavLink to="/" end>
+          {/* Products now lives at /products (the landing page is at /) */}
+          <NavLink to="/products" end>
             Products
           </NavLink>
           {/* These two links only exist for admins */}

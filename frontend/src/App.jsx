@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import RequireAuth from "./components/RequireAuth";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminProducts from "./pages/AdminProducts";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import ProductDetail from "./pages/ProductDetail";
@@ -16,8 +17,13 @@ export default function App() {
       <Navbar />
       <main className="container">
         <Routes>
-          <Route path="/" element={<Products />} />
+          {/* Landing page: big title + login box */}
+          <Route path="/" element={<Home />} />
+
+          {/* Product list, and one page per product */}
+          <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
+
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 

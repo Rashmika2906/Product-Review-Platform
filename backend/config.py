@@ -16,4 +16,4 @@ class Config:
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=12)
 
     # Which frontend origin may call this API (CORS)
-    FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:3000")
+    FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
