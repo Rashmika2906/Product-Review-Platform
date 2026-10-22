@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { api, clearToken, getToken, saveToken } from "./api";
-import { AuthContext } from "./auth-context";
+import { AuthContext } from "./authcontext";
 
 /** Keeps track of the logged-in user and offers login / register / logout to the whole app. */
 export default function AuthProvider({ children }) {
