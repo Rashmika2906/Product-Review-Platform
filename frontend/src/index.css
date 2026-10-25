@@ -852,4 +852,12 @@ main:has(.landing) {
   padding: 0 0.5rem;
   background: transparent;
   border: none;
-  co
+  color: var(--muted);
+  box-shadow: none;
+}
+.eye-btn:hover {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--rose);
+}
