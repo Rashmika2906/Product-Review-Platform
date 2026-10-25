@@ -2,8 +2,9 @@
 
 // Where the Flask API lives. Override with VITE_API_URL (see .env.example)
 // when the backend is deployed somewhere else.
-const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:5000/api";
-
+const API_BASE =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD ? "/api" : "http://127.0.0.1:5000/api");
 const TOKEN_KEY = "token";
 
 // A copy of the token is kept in memory too, because localStorage can be
