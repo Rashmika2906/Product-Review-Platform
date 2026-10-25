@@ -39,7 +39,7 @@ export default function Login() {
         <input id="email" name="email" type="email" autoComplete="email" required value={form.email} onChange={handleChange} />
 
         <label htmlFor="password">Password</label>
-        <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} required />
+        <PasswordInput id="password" name="password" autoComplete="current-password" required value={form.password} onChange={handleChange} />
 
         {error && (
           <p className="alert alert-error" role="alert">

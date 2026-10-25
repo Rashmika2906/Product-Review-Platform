@@ -42,7 +42,8 @@ export default function Register() {
         <input id="email" name="email" type="email" autoComplete="email" required value={form.email} onChange={handleChange} />
 
         <label htmlFor="password">Password (6+ characters)</label>
-        <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} required />
+        <PasswordInput id="password" name="password" autoComplete="new-password" required value={form.password} onChange={handleChange} />
+
         {error && (
           <p className="alert alert-error" role="alert">
             {error}

@@ -861,3 +861,9 @@ main:has(.landing) {
   box-shadow: none;
   color: var(--rose);
 }
+
+/* =========================================================
+   V7: Inside the landing login box, hide the form's own
+   "New here? / Already registered?" line (the box has its own switch)
+   ========================================================= */
+.login-box .muted { display: none; }
