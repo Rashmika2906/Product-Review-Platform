@@ -836,3 +836,20 @@ main:has(.landing) {
   }
   .landing-right { max-width: none; }
 }
+
+/* =========================================================
+   V6: Password field with show/hide eye button
+   ========================================================= */
+.password-field { position: relative; }
+.password-field input { padding-right: 3rem; }
+.eye-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.4rem;
+  display: grid;
+  place-items: center;
+  padding: 0 0.5rem;
+  background: transparent;
+  border: none;
+  co

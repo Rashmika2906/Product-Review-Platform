@@ -1,3 +1,4 @@
+import PasswordInput from "../components/PasswordInput";
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../authcontext";
@@ -38,15 +39,7 @@ export default function Login() {
         <input id="email" name="email" type="email" autoComplete="email" required value={form.email} onChange={handleChange} />
 
         <label htmlFor="password">Password</label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          autoComplete="current-password"
-          required
-          value={form.password}
-          onChange={handleChange}
-        />
+        <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} required />
 
         {error && (
           <p className="alert alert-error" role="alert">
